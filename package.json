@@ -1,0 +1,78 @@
+{
+  "name": "itsa-react-clone-props",
+  "version": "0.0.1",
+  "description": "Cloning react props, so that they are immutable. Works with react 15.0.1 and will not clone key and ref",
+  "author": [
+    {
+      "name": "Marco Asbreuk",
+      "email": "marco@itsasbreuk.nl"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ItsAsbreuk/itsa-react-clone-props"
+  },
+  "bugs": {
+    "url": "https://github.com/ItsAsbreuk/itsa-react-clone-props/issues"
+  },
+  "keywords": [
+    "itsasbreuk",
+    "itsa",
+    "clone",
+    "props",
+    "react",
+    "immutable"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": "*"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "itsa-jsext": "0.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-eslint": "^4.1.6",
+    "babel-loader": "^6.2.1",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^1.10.3",
+    "istanbul": "^0.3.0",
+    "itsa-classes": "^1.0.3",
+    "jsdom": "^7.2.2",
+    "jsdom-global": "^1.6.1",
+    "mocha": "^1.21.4",
+    "yuidocjs": "^0.9.0"
+  },
+  "scripts": {
+    "pretest": "eslint  ./**/*.js",
+    "test": "mocha 'tests/*.js' --compilers js:babel-core/register",
+    "lint": "eslint ./**/*.js",
+    "build": "webpack && yuidoc ./lib -q -c ./yuidoc.json"
+  },
+  "maintainers": [
+    {
+      "name": "Marco Asbreuk",
+      "email": "marco@itsasbreuk.nl"
+    }
+  ],
+  "testling": {
+    "harness": "mocha",
+    "files": "tests/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
+  "license": "BSD-3-Clause"
+}

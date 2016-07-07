@@ -1,6 +1,6 @@
 {
   "name": "itsa-react-clone-props",
-  "version": "0.0.2",
+  "version": "1.0.3",
   "description": "Cloning react props, so that they are immutable. Works with react 15.0.1 and will not clone key and ref",
   "author": [
     {
@@ -31,7 +31,7 @@
     "lib": "./lib"
   },
   "dependencies": {
-    "itsa-jsext": "0.0.2"
+    "itsa-jsext": "1.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
